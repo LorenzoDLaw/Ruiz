@@ -30,5 +30,6 @@ public class Gioco {
 			}
 		}
 		System.out.println("il miglior giocatore è: "+ vGiocatori[index].getNome());
+		//per provare bash
 	}
 }
