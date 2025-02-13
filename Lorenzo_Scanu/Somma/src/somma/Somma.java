@@ -24,32 +24,34 @@ public class Somma {
                 + "3) somma di stringhe");
         Scanner scanner = new Scanner(System.in);
         int i  = scanner.nextInt();
-        switch (i) {
-            case 1:
-                System.out.println("Inserisci primo numero intero :");
-                int x = scanner.nextInt();
-                System.out.println("Inserisci secondo numero intero:");
-                int y = scanner.nextInt();
-                System.out.println(somma(x,y));
-                break;
-            case 2:
-                System.out.println("Inserisci primo numero double:");
-                double x1 = scanner.nextDouble();
-                System.out.println("Inserisci secondo numero double:");
-                double y1 = scanner.nextDouble();
-                System.out.println(somma(x1,y1));
-                
-                break;
-            case 3:
-                System.out.println("Inserisci la prima stringa:");
-                String x2 = scanner.next();
-                System.out.println("Inserisci la seconda stringa:");
-                String y2 = scanner.next();
-                System.out.println(somma(x2,y2));
-                break;
-            default:
-                throw new AssertionError();
-        }
+        while (true) {            
+            switch (i) {
+                case 1:
+                    System.out.println("Inserisci primo numero intero :");
+                    int x = scanner.nextInt();
+                    System.out.println("Inserisci secondo numero intero:");
+                    int y = scanner.nextInt();
+                    System.out.println(somma(x,y));
+                    break;
+                case 2:
+                    System.out.println("Inserisci primo numero double:");
+                    double x1 = scanner.nextDouble();
+                    System.out.println("Inserisci secondo numero double:");
+                    double y1 = scanner.nextDouble();
+                    System.out.println(somma(x1,y1));
+
+                    break;
+                case 3:
+                    System.out.println("Inserisci la prima stringa:");
+                    String x2 = scanner.next();
+                    System.out.println("Inserisci la seconda stringa:");
+                    String y2 = scanner.next();
+                    System.out.println(somma(x2,y2));
+                    break;
+                default:
+                    throw new AssertionError();
+            }
+        }    
     }
     
     public static int somma(int x, int y){
